@@ -1,4 +1,5 @@
 def perform_operation(num1: float, num2: float, operation: str):
+    """ this functioim oerform some operations"""
     match operation : 
         case "add":
             return(num1 + num2)
