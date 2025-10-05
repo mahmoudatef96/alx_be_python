@@ -10,12 +10,12 @@ class Book:
     def __str__(self):
         """String representation of the book."""
         return f"'{self.title}' by {self.author} ({self.get_status()})"
-    def return_book(self, title):
+    def return_book(self):
         for book in self._books:
-            if book.title.lower == title.lower:
+            if book.title.lower == self.title.lower:
                 if book._is_checked_out:
                     book._is_checked_out = False
-                    return book.title
+                    return book
     def check_out_book(self, title):
         for book in self._books:
             if title == book.title:
