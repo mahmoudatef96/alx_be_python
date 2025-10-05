@@ -1,5 +1,5 @@
 class BankAccount:
-
+    
     def __init__(self, account_balance):
         self.account_balance = 0
 
@@ -13,7 +13,7 @@ class BankAccount:
         else:
             return False
     def display_balance(self):
-          print(f"The current balnce is {self.account_balance}")
+          print(f"Current Balance: {self.account_balance}")
           
 
     
